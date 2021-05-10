@@ -3,42 +3,58 @@
     <head>
         <meta charset="utf-8">
         <title>Project: Event invite</title>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
         <style>
+            body {
+                border: 2px dashed gray;
+                padding: 0px 10px 10px 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-radius: 4px;
+                
+            }
+            
             #header {
                 text-align: center;
-                background-color: rgb(204, 211, 255);
+                background-color: #87649C;
+                font-family: 'Tangerine', sans-serif;
+                font-size: 46px;
+                font-weight: bold;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-top: 15px;
+                border-radius: 4px;
             }
             
             #needs-sidebar {
                 float: right;
                 width: 25%;
-                background-color: gray;
-                margin-left: 10px;
+                background-color: #A58FB3;
+                margin-top: 15px;
                 padding-left: 15px;
+                border-radius: 4px;
             }
             
-            #rsvp-button {
-                position: relative;
-                left: 90%;
-                margin-right: 10px;
-                margin-bottom: 10px;
-            }
-            
-            #details {
+            #rsvp-button{       
+                float: right;
+                border-radius: 4px;
+                background-color: #E9CF90;
+                font-size: x-large;
+                padding: 1mm 2mm 1mm 2mm;
                 
             }
             
-            body {
-                border: 2px dashed gray;
-                padding: 0px 10px 10px 10px;
+            #rsvp-button:hover, #rsvp-button:active, #rsvp-button:focus {
+                background-color: #C3A04D;
             }
+            
         </style>
     </head>
     <body>
-        
         <div id="header">
-            <h1 id="welcome">You're invited!</h1>
-            <h2 id="event">To a delicious Sunday brunch!</h2>
+            <span id="welcome">You're Invited!</span>
+            <br>
+            <span id="event">To a delicious Sunday brunch!</spam>
         </div>
         
         <div id="needs-sidebar">
@@ -54,19 +70,19 @@
             <h3><p>The details:</p></h3>
             <p>In this project, you'll make an event invite for an event- a party, a workshop, a wedding, whatever you want. It should have event title, details, and maybe it'd have a guest list or RSVP button.</p>
 
-<p>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.</p>
+            <p>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.</p>
 
-<p>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
+            <p>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
 
             <p>In this project, you'll make an event invite for an event- a party, a workshop, a wedding, whatever you want. It should have event title, details, and maybe it'd have a guest list or RSVP button.</p>
 
-<p>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.</p>
+            <p>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.</p>
 
-<p>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
-
+            <p>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
+            <div id="rsvp-button">RSVP</div>
+            <br>
+            <br>
         </div>
         
-        
-        <button id="rsvp-button">RSVP</button>
     </body>
 </html>
