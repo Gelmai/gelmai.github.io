@@ -5,50 +5,7 @@
         <title>Project: Event invite</title>
         <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Tangerine">
-        <style>
-            body {
-                border: 2px dashed gray;
-                padding: 0px 10px 10px 10px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                border-radius: 4px;
-                
-            }
-            
-            #header {
-                text-align: center;
-                background-color: #87649C;
-                font-family: 'Tangerine', sans-serif;
-                font-size: 46px;
-                font-weight: bold;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                margin-top: 15px;
-                border-radius: 4px;
-            }
-            
-            #needs-sidebar {
-                float: right;
-                width: 25%;
-                background-color: #A58FB3;
-                margin-top: 15px;
-                padding-left: 15px;
-                border-radius: 4px;
-            }
-            
-            #rsvp-button{       
-                float: right;
-                border-radius: 4px;
-                background-color: #E9CF90;
-                font-size: x-large;
-                padding: 1mm 2mm 1mm 2mm;
-                
-            }
-            
-            #rsvp-button:hover, #rsvp-button:active, #rsvp-button:focus {
-                background-color: #C3A04D;
-            }
-            
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <div id="header">
@@ -79,7 +36,8 @@
             <p>Before you start coding, I encourage you to "prototype" it - to plan it out either on paper or with a "prototyping" tool. Sketch out the vision you have in your head and go through a few prototypes until you're happy.</p>
 
             <p>Then, when you're ready, try to implement your event invite in HTML/CSS. If you get stuck on something that's hard to transfer from paper to HTML, try searching on the internet or clicking "Request Help." I bet you'll learn something from the process.</p>
-            <div id="rsvp-button">RSVP</div>
+            <div id="rsvp-button" onclick="document.querySelector('#needs-sidebar').style.display='initial';">Reveal</div>
+            <div id="rsvp-button" onclick="document.querySelector('#needs-sidebar').style.display='none';">Hide</div>
             <br>
             <br>
         </div>
